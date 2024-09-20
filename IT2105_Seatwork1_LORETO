@@ -1,0 +1,48 @@
+public class -redacted-
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("INPUT YOUR GRADES; ");
+        
+        Console.Write("English: " );
+        float English = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Math: ");
+        float Math = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Science: ");
+        float Science = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Mapeh: ");
+        float Mapeh = Convert.ToInt32(Console.ReadLine());
+        
+    float sum = English + Math + Science + Mapeh;
+    float average = sum / 4;
+    
+    Console.WriteLine("Your Average: " + average);
+    
+    if (average > 100)
+    {
+        Console.WriteLine("Invalid Grade");
+    
+    }
+    else if (average >= 98 )
+    {
+        Console.WriteLine("With Highest Honors");
+    }
+    else if (average >= 95 )
+    {
+        Console.WriteLine("With High Honors");
+    }
+    else if (average >= 90)
+    {
+        Console.WriteLine("With Honors");
+    }
+    else if (average >= 70 )
+    {
+        Console.WriteLine("You Passed Congratulations");
+    }
+   else
+   {
+       Console.WriteLine("You Failed :<");
+   }
+    
+    }
+}
